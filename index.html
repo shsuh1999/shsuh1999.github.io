@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travellet</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class = "main">
+        <div class = "navbar">
+            <div class = "icon">
+                <img src="logo.png" alt="Logo" class="logo">
+                <a href="./index.html">Travellet</a>
+            </div>
+            <div class = "menu">
+                
+                <a href="./index.html">Home</a>
+                <a href="./aboutUs.html">About Us</a>
+                <a href="./contactUs.html">Contact Us</a>
+            
+            </div>
+            <div class= "search">
+                <input class = "searchText" type="text" id="placeInput" placeholder="Enter a destenation"> 
+                <button onclick="searchPlace()" class= "searchButton" id='search'>Search</button>
+                <button onclick="clearResults()" class= "resetButton" id='reset'>Reset</button>
+            </div> 
+            <div class= "result-window" id="result"></div>
+        </div>
+
+        <div class= "home">
+             <h1>Travel Around the World<br></h1>
+             <p>Embark on a Journey of a Lifetime: Explore Unforgettable Destinations, Hidden Gems, and Unique Experiences Tailored Just for You.<br>
+            Whether You are Seeking Adventure, Relaxation, or Cultural Immersion, Our Expert Recommendations Will Guide You to the Perfect Getaway.<br>
+            Discover Your Next Adventure Today and Create Memories That Will Last Forever!</p>
+        </div>
+        <div class="social-icons">
+            <img src="facebook.png" alt="Facebook">
+            <img src="twitter.png" alt="Twitter">
+            <img src="instagram.png" alt="Instagram">
+        </div>
+    </div> 
+    
+   
+
+    <script src="travel_recommendation.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,251 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url("background.jpg");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #BFD7FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.icon img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main a {
+    font-size: 24px;
+    font-weight: bold;
+    display:inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.main a:hover {
+    background-color: #9BB1FF;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.main a.active {
+    background-color: #788BFF;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.searchText, .searchButton, .resetButton {
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.searchText {
+    border: none;
+}
+
+.searchButton{
+    background-color: #9BB1FF;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.resetButton {
+    margin-right: 50px;
+    background-color: #9BB1FF;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.searchButton:hover, .resetButton:hover {
+    background-color: #788BFF;
+    color: whitesmoke;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Home page styling */
+.home {
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+    text-align: left;
+    color: whitesmoke;
+}
+ h1{
+    font-size: 72px;
+ }
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* About Us page styling */
+.about {
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.team .member{
+    float:left;
+    clear: none;
+    margin-right: 10%;
+}
+
+.member {
+    background-color:rgba(120, 139, 255, 0.9);
+    color:whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+}
+
+
+
+/* Contact Us page styling */
+.contact {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: whitesmoke;
+    
+    font-size: 24px;
+    
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 6%;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+    margin-left: 10%;
+    margin-right:20%;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding:10px;
+    padding-left: 100px;
+    padding-right: 100px
+}
+
+.submitButton {
+    font-size: 24px;
+    background-color: #788BFF;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 150px;
+}
+
+.submitbutton:hover {
+    background-color: #9BB1FF;
+    color: whitesmoke;
+}
+
+.result-window {
+    display: none; 
+    position: fixed;
+    top: 60px; 
+    right: 0;
+    width: 365px;
+    margin-right: 68px;
+    max-height: calc(100% - 50px);
+    overflow-y: auto; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #788BFF;
+    padding: 20px;
+    z-index: 999; 
+}
+
+.result-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #9BB1FF;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.result-title {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.result-description {
+    font-size: small;
+    color: #666;
+    text-align: center;
+}
+
+.result-time {
+    font-size: small;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+}
